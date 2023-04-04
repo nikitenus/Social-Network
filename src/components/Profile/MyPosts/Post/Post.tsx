@@ -1,10 +1,9 @@
 import React from 'react';
 import s from './Post.module.css'
-import {message} from "antd";
 
 type PostPropsType = {
     message: string
-    likes: number
+    likesCount: number
 }
 
 export const Post = (props: PostPropsType) => {
@@ -15,7 +14,7 @@ export const Post = (props: PostPropsType) => {
                 alt="post"/>
             {props.message}
             <div>
-                <span>like - {props.likes}</span>
+                <span>like - {props.likesCount}</span>
             </div>
         </div>
     );
